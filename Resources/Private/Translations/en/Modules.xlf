@@ -306,7 +306,7 @@
             </trans-unit>
             <trans-unit id="clipBoardCopyLabel" xml:space="preserve">
                 <source>Copy</source>
-                <target>Kopieren</target>
+                <target>Copy</target>
             </trans-unit>
         </body>
     </file>
