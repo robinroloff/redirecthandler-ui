@@ -1,7 +1,401 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="Weblate" source-language="en" datatype="plaintext">
+  <file original="" product-name="Neos.RedirectHandler.Ui" source-language="en" target-language="nl" datatype="plaintext">
     <body>
-      </body>
+      <trans-unit xml:space="preserve" id="module.label">
+        <source>Redirects</source>
+        <target state="translated">Doorverwijzingen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="module.description">
+        <source>This module contains the overview of all redirects and allows to add new redirects and edit or delete existing ones.</source>
+        <target state="translated">Deze module bevat een overzicht van alle doorverwijzingen en staat het toe om nieuwe doorverwijzingen aan te maken, bestaande te wijzigen of verwijderen.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="filter.search">
+        <source>Search</source>
+        <target state="translated">Zoeken</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="filter.search.placeholder">
+        <source>Search for a redirect</source>
+        <target state="translated">Zoeken naar een doorverwijzing</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="filter.statusCode">
+        <source>Code</source>
+        <target state="translated">Code</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="filter.resultsCountSuffix">
+        <source>({0} total results)</source>
+        <target state="translated">({0} totaal resultaten)</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="filter.type">
+        <source>Type</source>
+        <target state="translated">Type</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="filter.type.manual">
+        <source>Manual</source>
+        <target state="translated">Handmatig</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="filter.type.generated">
+        <source>Generated</source>
+        <target state="translated">Gegenereerd</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="filter.showDetails">
+        <source>Show details</source>
+        <target state="translated">Toon details</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="pagination.position">
+        <source>Showing {0}-{1} of {2}</source>
+        <target state="translated">Toon {0}-{1} van {2}</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="pagination.noResults">
+        <source>No redirects match your search</source>
+        <target state="translated">Geen doorverwijzingen komen overeen met uw zoekopdracht</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="list.neverHit">
+        <source>Never hit</source>
+        <target state="translated">Nooit gebruikt</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="list.lastHit">
+        <source>Last hit was {0}</source>
+        <target state="translated">Laatste keer was {0}</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="list.action.edit">
+        <source>Edit</source>
+        <target state="translated">Bewerken</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="list.action.delete">
+        <source>Delete redirect</source>
+        <target state="translated">Doorverwijzing verwijderen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="list.action.confirmDelete">
+        <source>Delete the redirect "{0}"?</source>
+        <target state="translated">Doorverwijzing "{0}" verwijderen?</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="list.action.copyPath">
+        <source>Copied path to clipboard</source>
+        <target state="translated">Pad is naar klembord gekopieerd</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="warning.redirectCreatedWithChanges">
+        <source>The redirect from "{0}/{1}" to "/{2}" ({3}) has been created, but there were changes to other redirects!</source>
+        <target state="translated">De doorverwijzing van "{0}/{1}" naar "/{2}" ({3}) is aangemaakt, maar er waren ook andere wijzigingen naar andere doorverwijzingen!</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="warning.redirectUpdatedWithChanges">
+        <source>The redirect from "{0}/{1}" to "/{2}" ({3}) has been updated, but there were changes to other redirects!</source>
+        <target state="translated">De doorverwijzing van "{0}/{1}" naar "/{2}" ({3}) is bijgewerkt, maar er waren ook wijzigingen naar andere doorverwijzingen!</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="message.updatedRedirects">
+        <source>The following redirects have been updated</source>
+        <target state="translated">De volgende doorverwijzingen zijn bijgewerkt</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="message.redirectCreated">
+        <source>The redirect from "{0}/{1}" to "/{2}" ({3}) has been created</source>
+        <target state="translated">De doorverwijzing van "{0}/{1}" naar "/{2}" ({3}) is aangemaakt</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="message.relatedChanges">
+        <source>Related changes:</source>
+        <target state="translated">Gerelateerde wijzigingen:</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="message.redirectUpdated">
+        <source>The redirect has been updated</source>
+        <target state="translated">De doorverwijzing is bijgewerkt</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="message.redirectDeleted">
+        <source>The redirect from "{0}/{1}" has been deleted</source>
+        <target state="translated">De doorverwijzing van "{0}/{1}" is verwijderd</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="message.importCsvSuccess">
+        <source>The redirects from the CSV file were imported successfully. See the protocol for details.</source>
+        <target state="translated">De doorverwijzigingen uit het CSV bestand zijn succesvol geïmporteerd. Zie het protocol voor details.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="message.importCsvSuccessWithErrors">
+        <source>The redirects from the CSV file were imported but there were some errors. See the protocol for details.</source>
+        <target state="translated">De doorverwijzingen uit het CSV bestand zijn geïmporteerd, maar er waren enkele fouten. Zie het protocol voor details.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.redirectNotValid">
+        <source>The redirect is not valid</source>
+        <target state="translated">De doorverwijzing is niet geldig</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.redirectExists">
+        <source>The redirect already exists</source>
+        <target state="translated">De doorverwijzing bestaat al</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.redirectNotDeleted">
+        <source>The redirect could not be removed</source>
+        <target state="translated">De doorverwijzing kon niet verwijderd worden</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.redirectNotCreated">
+        <source>The redirect could not be created</source>
+        <target state="translated">De doorverwijzing kon niet aangemaakt worden</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.redirectNotUpdated">
+        <source>The redirect could not be updated</source>
+        <target state="translated">De doorverwijzing kon niet bijgewerkt worden</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.invalidStartDateTime">
+        <source>The start datetime is invalid</source>
+        <target state="translated">De start datum/tijd is ongeldig</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.invalidEndDateTime">
+        <source>The end datetime is invalid</source>
+        <target state="translated">De eind datum/tijd is ongeldig</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.sameSourceAndTarget">
+        <source>The source and target paths cannot be the same</source>
+        <target state="translated">De bron- en doelpaden kunnen niet gelijk zijn</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.importCsvFailed">
+        <source>An error occurred while reading the csv file content</source>
+        <target state="translated">Een fout is opgetreden tijdens het lezen van de inhoud van het CSV bestand</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.importResourceFailed">
+        <source>An error occurred while reading the uploaded file</source>
+        <target state="translated">Een fout is opgetreden tijdens het lezen van het geüploade bestand</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.csvFileNotSet">
+        <source>You have to select a CSV file to import</source>
+        <target state="translated">U dient een CSV bestand te selecteren om te importeren</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.importCsvEmpty">
+        <source>No entries were found in the CSV file</source>
+        <target state="translated">Geen records gevonden in het CSV bestand</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="error.sourceUriPathNotValid">
+        <source>The source path doesn't match the expression {0}</source>
+        <target state="translated">Het bronpad komt niet overeen met de uitdrukking {0}</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="host">
+        <source>Origin domain</source>
+        <target state="translated">Oorsprongsdomein</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="host.allDomains.title">
+        <source>This redirect applies to all domains</source>
+        <target state="translated">Deze doorverwijzing geldt voor alle domeinen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="host.allDomains">
+        <source>All</source>
+        <target state="translated">Alle</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="csvFile">
+        <source>CSV File</source>
+        <target state="translated">CSV bestand</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="sourceUriPath">
+        <source>Source path</source>
+        <target state="translated">Bronpad</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="sourceUriPath.help">
+        <source>
+                    The source uri path is the relative path after the hostname.
+                    F.e. "my/subpage" without any leading or trailing slashes or query parameters.
+                    Those will be ignored by Neos when checking a url if it needs to be redirected.
+                </source>
+        <target state="translated">
+                    Het bron-URI-pad is het relatieve pad na de hostnaam.
+                    Bijvoorbeeld: "mijn/subpagina" zonder voor- of achterwaartse schuine strepen en zonder queryparameters.
+                    Deze worden door Neos genegeerd bij het controleren of een URL moet worden doorverwezen.
+                </target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCode">
+        <source>Code</source>
+        <target state="translated">Code</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="targetUriPath">
+        <source>Target uri or path</source>
+        <target state="translated">Doel-URI of pad</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="startDateTime">
+        <source>Active from</source>
+        <target state="translated">Actief vanaf</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="startDateTime.placeholder">
+        <source>E.g. 2019-08-30 13:45</source>
+        <target state="translated">Bijvoorbeeld: 2019-08-30 13:45</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="endDateTime">
+        <source>Active until</source>
+        <target state="translated">Actief tot</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="endDateTime.placeholder">
+        <source>E.g. 2021-08-30 08:30</source>
+        <target state="translated">Bijvoorbeeld: 2021-08-30 08:30</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="comment">
+        <source>Comment</source>
+        <target state="translated">Opmerking</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="comment.placeholder">
+        <source>Campaign for new product</source>
+        <target state="translated">Campagne voor nieuw product</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="creator">
+        <source>Creator</source>
+        <target state="translated">Maker</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="hitCounter">
+        <source>Hits</source>
+        <target state="translated">Aantal doorverwijzingen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="creationDate">
+        <source>Created</source>
+        <target state="translated">Aangemaakt</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="field.delimiter.label">
+        <source>Delimiter</source>
+        <target state="translated">Scheidingsteken</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="field.includeInactiveRedirects.label">
+        <source>Include inactive redirects</source>
+        <target state="translated">Inclusief inactieve doorverwijzingen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="field.includeGeneratedRedirects.label">
+        <source>Include automatically generated redirects</source>
+        <target state="translated">Inclusief automatisch gegenereerde doorverwijzingen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="header.importCsvForm">
+        <source>Import redirects from a CSV file</source>
+        <target state="translated">Importeer doorverwijzingen vanuit een CSV bestand</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="header.importProtocol">
+        <source>Import protocol</source>
+        <target state="translated">Importeerprotocol</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="header.editRedirect">
+        <source>Edit redirect</source>
+        <target state="translated">Doorverwijzing wijzigen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="header.manageRedirects">
+        <source>Manage redirects</source>
+        <target state="translated">Doorverwijzingen beheren</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="actions">
+        <source>Actions</source>
+        <target state="translated">Acties</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="action.importCsvFile">
+        <source>Import redirects from CSV file</source>
+        <target state="translated">Importeer doorverwijzingen uit een CSV bestand</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="action.create">
+        <source>Add redirect</source>
+        <target state="translated">Doorverwijzing toevoegen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="action.update">
+        <source>Update redirect</source>
+        <target state="translated">Doorverwijzing bijwerken</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="action.edit">
+        <source>Edit redirect</source>
+        <target state="translated">Doorverwijzing wijzigen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="action.cancel">
+        <source>Cancel</source>
+        <target state="translated">Annuleren</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="action.backToList">
+        <source>Back to redirect list</source>
+        <target state="translated">Terug naar de doorverwijzingenlijst</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="action.exportCsv">
+        <source>Export CSV file</source>
+        <target state="translated">CSV bestand exporteren</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="action.export">
+        <source>Export redirect rules</source>
+        <target state="translated">Doorverwijzingsregels exporteren</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="action.import">
+        <source>Import redirect rules</source>
+        <target state="translated">Doorverwijzingsregels importeren</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="list.loading">
+        <source>Loading…</source>
+        <target state="translated">Laden…</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="list.empty">
+        <source>There are currently no redirects defined.</source>
+        <target state="translated">Er zijn op dit moment geen doorverwijzingen gedefinieerd.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="hint.importCsvFile">
+        <source>
+                    It is recommended to do an export of the existing redirects as CSV and work on that file, before importing again.
+                    This way the structure and required columns are already set up.
+                </source>
+        <target state="translated">
+                    Het wordt aanbevolen om de huidige doorverwijzingen te exporteren naar een CSV bestand en dit bestand te bewerken, alvorens deze opnieuw te importeren.
+                    Op deze manier zijn de structuur en verplichte kolommen al correct ingericht.
+                </target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="hint.importGetHelp">
+        <source>Get more help.</source>
+        <target state="translated">Meer hulp krijgen.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.301.label">
+        <source>301 - Moved Permanently</source>
+        <target state="translated">301 - Permanent verhuisd</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.301.tooltip">
+        <source>A 301 HTTP header is used when the requested URL permanently moved to a new location.</source>
+        <target state="translated">Een 301 HTTP header wordt gebruikt om de opgevraagde URL permanent te verhuizen naar een nieuwe locatie.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.302.label">
+        <source>302 - Found</source>
+        <target state="translated">302 - Gevonden</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.302.tooltip">
+        <source>A 302 means that the target destination has been found, but it lives under a different location. Use a 302 redirect only if you want to temporarily redirect a URL to a different source and you are sure that you will use the same URL again.</source>
+        <target state="translated">Een 302 houdt in dat de doelbestemming gevonden is, maar dat deze zich onder een andere locatie bevindt. Gebruik een 302 doorverwijzing alleen als tijdelijk een URL wilt doorverwijzen naar een andere bron en u zeker weet dat u op den duur dezelfde URL opnieuw wilt gebruiken.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.303.label">
+        <source>303 - See Other</source>
+        <target state="translated">303 - Zie overig</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.303.tooltip">
+        <source>A 303 means that the response to the request can be found under another URI using the GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a new GET request to the given URI.</source>
+        <target state="translated">Een 303 houdt in dat de response op het request gevonden kan worden op een andere URI via de GET methode. Wanneer dit ontvangen is als response op een POST (of PUT/DELETE) request, dan moet de client aannemen dat de server de data heeft ontvangen en dat een nieuwe GET request gemaakt moet worden naar de opgegeven URI.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.307.label">
+        <source>307 - Temporary Redirect</source>
+        <target state="translated">307 - Tijdelijke doorverwijzing</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.307.tooltip">
+        <source>A 307 can be used to temporarily redirect a URL to a new one while keeping the original request method intact. A 307 behaves like a 302, except that it tells specifically that the URL has a temporary new location.</source>
+        <target state="translated">Een 307 kan worden gebruikt om een URL tijdelijk door te verwijzen naar een nieuwe locatie, terwijl de originele verzoekmethode behouden blijft. Een 307 gedraagt zich als een 302, met het verschil dat hij expliciet aangeeft dat de URL tijdelijk een nieuwe locatie heeft.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.403.label">
+        <source>403 - Forbidden</source>
+        <target state="translated">403 - Verboden</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.403.tooltip">
+        <source>A 403 tells the browser that the requested content is forbidden for the user.</source>
+        <target state="translated">Een 403 informeert de browser dat de opgevraagde content verboden is voor de gebruiker.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.404.label">
+        <source>404 - Not Found</source>
+        <target state="translated">404 - Niet gevonden</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.404.tooltip">
+        <source>A 404 tells the browser that the content has not been found and has been probably deleted.</source>
+        <target state="translated">Een 404 informeert de browser dat de content niet gevonden kon worden en dat het hoogstwaarschijnlijk verwijderd is.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.410.label">
+        <source>410 - Gone</source>
+        <target state="translated">410 - Verwijderd</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.410.tooltip">
+        <source>The result from a 410 status code is the same as a 404 since the content has not been found. However, with a 410 you tell search engines that the requested content has been deleted, thus it’s much more specific than a 404.</source>
+        <target state="translated">Het resultaat van een 410-statuscode is hetzelfde als bij een 404, omdat de inhoud niet is gevonden. Met een 410 geef je echter aan zoekmachines expliciet aan dat de opgevraagde inhoud is verwijderd, waardoor het veel specifieker is dan een 404.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.451.label">
+        <source>451 - Unavailable for Legal Reasons</source>
+        <target state="translated">451 - Niet beschikbaar om juridische redenen</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="statusCodes.451.tooltip">
+        <source>The 451 HTTP status code shows that the requested content has been deleted because of legal reasons.</source>
+        <target state="translated">De 451 HTTP-statuscode geeft aan dat de opgevraagde inhoud is verwijderd om juridische redenen.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="clipBoardCopyLabel">
+        <source>Copy</source>
+        <target state="translated">Kopiëren</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>
