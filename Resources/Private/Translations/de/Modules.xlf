@@ -395,7 +395,7 @@ Diese ignoriert Neos, wenn für eine aufgerufene Url geprüft wird, ob eine Weit
       </trans-unit>
       <trans-unit id="clipBoardCopyLabel" xml:space="preserve">
         <source>Copy</source>
-        <target>Kopieren</target>
+        <target state="translated">Kopieren</target>
       </trans-unit>
     </body>
   </file>
