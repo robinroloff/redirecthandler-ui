@@ -93,7 +93,7 @@ export class RedirectForm extends PureComponent<RedirectFormProps, RedirectFormS
         const parsedSourceUrl: URL = UrlUtil.parseURL(sourceUriPath, location.origin);
         const parsedTargetUrl: URL = UrlUtil.parseURL(targetUriPath, location.origin);
 
-        if ((!parsedSourceUrl.host || parsedSourceUrl.host === parsedTargetUrl.host) && parsedSourceUrl.pathname === parsedTargetUrl.pathname) {
+        if ((!parsedSourceUrl.hostname || parsedSourceUrl.hostname === parsedTargetUrl.hostname) && parsedSourceUrl.pathname === parsedTargetUrl.pathname) {
             notificationHelper.warning(
                 translate('error.sameSourceAndTarget', 'The source and target paths cannot be the same')
             );
