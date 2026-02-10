@@ -27483,7 +27483,7 @@ class RedirectForm extends (0, _react.PureComponent) {
         host = host && host.trim() === "*" ? "" : host;
         const parsedSourceUrl = (0, _util.UrlUtil).parseURL(sourceUriPath, location.origin);
         const parsedTargetUrl = (0, _util.UrlUtil).parseURL(targetUriPath, location.origin);
-        if ((!parsedSourceUrl.host || parsedSourceUrl.host === parsedTargetUrl.host) && parsedSourceUrl.pathname === parsedTargetUrl.pathname) {
+        if ((!parsedSourceUrl.hostname || parsedSourceUrl.hostname === parsedTargetUrl.hostname) && parsedSourceUrl.pathname === parsedTargetUrl.pathname) {
             notificationHelper.warning(translate("error.sameSourceAndTarget", "The source and target paths cannot be the same"));
             return;
         }
